@@ -1,0 +1,195 @@
+/* Importing Google font - Open Sans */
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap'); */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+body {
+    background-color: rgba(226, 226, 226, 0.295);
+    
+  
+}
+.card-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    max-width: 1250px;
+    margin: 150px auto;
+    padding: 20px;
+    gap: 10.5rem;
+    animation: fade-side 4s;
+    
+}
+.card-list .card-item {
+    background: #ffffff;
+    padding: 26px;
+    border-radius: 8px;
+    /* box-shadow: 20px 30px 20px rgba(0, 0, 0, 0.04), 10px 20px 10px rgba(0, 0, 0, 0.04), 10px 20px 10px rgba(0, 0, 0, 0.04); */
+    box-shadow: 4px 5px rgb(161, 161, 161), 0 10px 15px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    cursor: pointer;
+    text-decoration: none;
+    border: 1px solid transparent;
+    transition: border 0.5s ease;
+    margin-bottom: 5rem;
+}
+.card-list .card-item:hover {
+    border: 2px solid #000;
+}
+.card-list .card-item img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    border-radius: 8px;
+    object-fit: cover;
+}
+.card-list span {
+    display: inline-block;
+    background: #F7DFF5;
+    margin-top: 32px;
+    padding: 8px 15px;
+    font-size: 1rem;
+    border-radius: 50px;
+    font-weight: 600;
+}
+.card-list .developer {
+    background-color: #F7DFF5; 
+    color: #B22485;
+}   
+.card-list .designer {
+    background-color: #d1e8ff;
+    color: #2968a8;
+}
+.card-list .editor {
+    background-color: #d6f8d6; 
+    color: #205c20;
+}
+.card-item h3 {
+    color: #000;
+    font-size: 1.438rem;
+    margin-top: 28px;
+    font-weight: 600;
+}
+.card-item h2{
+  color: #000;
+  font-size: 1.7rem;
+  margin-top: 20px;
+  font-weight: 750;
+
+}
+.card-item .arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(-35deg);
+    height: 40px;
+    width: 40px;
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 50%;
+    margin-top: 40px;
+    transition: 0.2s ease;
+   
+}
+.title {
+    margin-top: -5rem;
+    font-size: 3rem;
+    text-align: center;
+    color: black;
+    letter-spacing: 0.70px;
+    font-weight: bold;
+    padding-top: 5rem;
+    animation: fade-side-left 2s;
+}  
+
+@keyframes fade-side-left {
+  
+    0%{
+      opacity: 0;
+      transform: translateX(-30rem) scale(0.9);
+    }
+    100%{
+      opacity: 1;
+      transform: translateX(0px) scale(1);
+    }
+}
+
+
+
+@keyframes fade-side {
+  
+    0%{
+      opacity: 0;
+      transform: translateX(-100px) scale(0.9);
+    }
+    100%{
+      opacity: 1;
+      transform: translateX(0px) scale(1);
+    }
+}
+
+ 
+@keyframes fade-down {
+  
+    0%{
+      opacity: 0;
+      transform: translateY(-30px) scale(0.9);
+    }
+    100%{
+      opacity: 1;
+      transform: translateY(0px) scale(1);
+    }
+}
+    @keyframes fade-up {
+  
+        0%{
+          opacity: 0;
+          transform: translateY(30px) scale(0.9);
+        }
+        100%{
+          opacity: 1;
+          transform: translateY(0px) scale(1);
+        }
+    }
+
+
+.section__text__p1 {
+    font-size: 2rem;
+    font-style: italic;
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: 300;
+    color: #615e5e;
+    margin-top: 10px;
+    margin-bottom: -5rem;
+    animation: fade-side 2s;
+  }
+
+.card-list .card-item:hover .arrow  {
+    background: #000;
+    color: #fff; 
+
+}
+
+
+
+@media (max-width: 1200px) {
+    .card-list .card-item {
+        padding: 15px;
+    }
+}
+@media screen and (max-width: 980px) {
+    .card-list {
+        margin: 0 auto;
+    }
+    .title{
+        margin-top: 20px;
+    }
+    .section__text__p1{
+        letter-spacing: 1px;
+        
+    }
+    .section__text__p1{
+        margin-bottom: 4rem;
+    }
+}

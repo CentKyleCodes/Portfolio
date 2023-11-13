@@ -1,0 +1,65 @@
+<body>
+  <div class="container">
+    <div class="content">
+      <div class="left-side">
+        <div class="address details">
+          <fa-icon [icon]="faMapMarkerAlt"></fa-icon>
+      
+          <!-- <i class="fas fa-map-marker-alt"></i> -->
+          <div class="topic">Address</div>
+          <div class="text-one">Dasmarinas, Cavite</div>
+          <div class="text-two">Project 6, Quezon City</div>
+        </div>
+        <div class="phone details">
+          <fa-icon [icon]="faPhoneAlt"></fa-icon>
+          <!-- <i class="fas fa-phone-alt"></i> -->
+          <div class="topic">Phone</div>
+          <div class="text-one">+63 94 5116 0868</div>
+          <div class="text-two"></div>
+        </div>
+        <div class="email details">
+          <fa-icon [icon]="faEnvelope"></fa-icon>
+          <!-- <i class="fas fa-envelope"></i> -->
+          <div class="topic">Email</div>
+          <div class="text-one">aluzanvince@gmail.com</div>
+          <div class="text-two">vincentealuzan@tua.edu.ph</div>
+        </div>
+      </div>
+      <div class="right-side">
+        <div class="topic-text">Email Me  <fa-icon [icon]="faMessage"></fa-icon></div>
+        <p>If you have any offers for me, you can contact me from here and send me an email.  It's my pleasure to help you.</p>
+
+        <!-- If you have any offers for me, you can contact me from here and send me an email. -->
+        <form action="javascript:void(0)" (submit)="send()">
+          
+          <div class="input-box">      
+            <input 
+            placeholder="Enter your email"
+            formControlName="from_email" 
+            type="text">
+          
+          </div>
+   
+          <div class="input-box">   
+            <input   
+            placeholder="Enter your subject"
+            type="text" 
+            formControlName="subject"
+            >
+          </div>
+ 
+          <div class="input-box message-box">
+
+            <textarea  
+             formControlName="message"
+            placeholder="Enter your message"></textarea>
+            </div>
+              <div class="button">
+              <span><input type="submit" class="custom-btn btn-1"></span>
+            </div>
+      
+        </form>
+    </div>
+    </div>
+  </div>
+</body>

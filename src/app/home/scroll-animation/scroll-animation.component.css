@@ -1,0 +1,135 @@
+
+body {
+    background: #949292;
+    animation: fade-side-left 2s;
+    margin-top: -8rem;
+    margin-bottom: 2rem;
+  }
+  
+  @keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  
+
+@keyframes fade-side-left {
+  
+    0%{
+      opacity: 0;
+      transform: translateX(50px) scale(0.9);
+    }
+    100%{
+      opacity: 1;
+      transform: translateX(0px) scale(1);
+    }
+}
+
+  
+
+@keyframes fade-side {
+  
+    0%{
+      opacity: 0;
+      transform: translateX(-30px) scale(0.9);
+    }
+    100%{
+      opacity: 1;
+      transform: translateX(0px) scale(1);
+    }
+  }
+  
+  
+  @keyframes fade-down {
+  
+    0%{
+      opacity: 0;
+      transform: translateY(-30px) scale(0.9);
+    }
+    100%{
+      opacity: 1;
+      transform: translateY(0px) scale(1);
+    }
+  }
+    @keyframes fade-up {
+  
+        0%{
+          opacity: 0;
+          transform: translateY(30px) scale(0.9);
+        }
+        100%{
+          opacity: 1;
+          transform: translateY(0px) scale(1);
+        }
+    }
+
+  
+  .title {
+    font-size: 3rem;
+    text-align: center;
+    color: black;
+    letter-spacing: -1px;
+    font-weight: bold;
+    animation: fade-down 2s;
+  
+}  
+
+.section__text__p1 {
+    font-size: 2rem;
+    font-style: italic;
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: 300;
+    color: #615e5e;
+    margin-top: 10px;
+    margin-bottom: 10rem;
+    animation: fade-side 3s;
+  }
+  
+  .logos {
+    overflow: hidden;
+    padding: 60px 0;
+    background: rgb(255, 255, 255);
+    white-space: nowrap;
+    position: relative;
+    box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
+  }
+  
+  .logos:before,
+  .logos:after {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+  }
+  
+  .logos:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+  }
+  
+  .logos:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+  }
+  
+  .logos:hover .logos-slide {
+    animation-play-state: paused;
+  }
+  
+  .logos-slide {
+    display: inline-block;
+    animation: 35s slide infinite linear;
+  }
+  
+  .logos-slide img {
+    height: 50px;
+    margin: 0 40px;
+  }
+  
