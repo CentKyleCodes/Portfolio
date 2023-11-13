@@ -1,6 +1,10 @@
 # THIS IS MY PORTFOLIO 
+![Uploading screencapture-localhost-4200-2023-11-12-23_22_22.png…]()
 
 
+# LANGUAGES USED: 
+
+HTML | CSS | TYPESCRIPT | ANGULAR | v.16.1.5
 
 
 # Portfolio 
