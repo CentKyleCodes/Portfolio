@@ -1,5 +1,5 @@
 # THIS IS MY PORTFOLIO 
-![Uploading screencapture-localhost-4200-2023-11-12-23_22_22.png…]()
+![screencapture-localhost-4200-2023-11-12-23_22_22-1](https://github.com/CentKyleCodes/Portfolio/assets/136968652/5a4eaab7-0501-42eb-abf7-1b4b69d86af4)
 
 
 # LANGUAGES USED: 
